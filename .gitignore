@@ -1,4 +1,13 @@
+#Environment files
 .venv
 /venv
 
+#Datasets
 data/*
+
+#python caches
+*/__pycache__
+*/__init__.py
+
+#setup files
+subprimesignal.egg-info
