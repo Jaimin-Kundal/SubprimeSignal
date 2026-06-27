@@ -58,3 +58,12 @@ KEEP_COLS = [
     "NUM_BORROWERS",
     "ORIG_YEAR",
 ]
+
+MISSING_CODES = {
+    "CREDIT_SCORE":  9999,
+    "DTI":           999,
+    "OCLTV":         999,
+    "MI_PCT":        999,
+    "NUM_UNITS":     99,
+    "NUM_BORROWERS": 99,
+}
