@@ -1,9 +1,13 @@
 #Importing Libraries
 import pandas as pd
 from pathlib import Path 
+from src.features import ORIG_COLS
+
+
+
 
 #Path to data director
-data_dir = Path("data")
+data_dir = Path("../data")
 
 orig_frames = []
 
@@ -23,6 +27,7 @@ def orig_loader():
             files,
             sep="|",header=None,low_memory=False #here low memory ensure loading file at one as dataset each year have only 50k row
             )
+        df.columns = ORIG_COLS
         df["ORIG_YEAR"] = year # adding year to each row 
         orig_frames.append(df)
 
