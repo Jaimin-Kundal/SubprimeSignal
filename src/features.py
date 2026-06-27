@@ -1,0 +1,60 @@
+#Features names are given as in user guide by Freddic Mac.I have Extracted detials in md file which is located inside docs. Full Guide is avialabl one the official website of Freddic Mac
+
+ORIG_COLS = [
+    "CREDIT_SCORE",
+    "FIRST_PYMT_DATE",
+    "FIRST_TIME_BUYER",
+    "MATURITY_DATE",
+    "MSA",
+    "MI_PCT",
+    "NUM_UNITS",
+    "OCC_STATUS",
+    "OCLTV",
+    "DTI",
+    "UPB",
+    "LTV",
+    "INTEREST_RATE",
+    "CHANNEL",
+    "PPM_FLAG",
+    "PRODUCT_TYPE",     # FRM or ARM
+    "PROPERTY_STATE",
+    "PROPERTY_TYPE",
+    "ZIP_3",
+    "LOAN_SEQ_NUM",     # ← this is the join key
+    "LOAN_PURPOSE",
+    "LOAN_TERM",
+    "NUM_BORROWERS",
+    "SELLER_NAME",
+    "SERVICER_NAME",
+    "SUPER_CONF_FLAG",
+    # newer sample files may have extra columns after here
+     "PRE_HARP_LOAN_SEQ",
+    "SPECIAL_ELIGIBILITY",
+    "RELIEF_REFINANCE_FLAG",
+    "PROPERTY_VAL_METHOD",
+    "INTEREST_ONLY_FLAG",
+    "MI_CANCELLATION_FLAG",
+    
+]
+
+KEEP_COLS = [
+    "CREDIT_SCORE",
+    "FIRST_PYMT_DATE",
+    "FIRST_TIME_BUYER",
+    "MI_PCT",
+    "NUM_UNITS",
+    "OCC_STATUS",
+    "OCLTV",
+    "DTI",
+    "UPB",
+    "LTV",
+    "INTEREST_RATE",
+    "CHANNEL",
+    "PROPERTY_STATE",
+    "PROPERTY_TYPE",
+    "LOAN_SEQ_NUM",
+    "LOAN_PURPOSE",
+    "LOAN_TERM",
+    "NUM_BORROWERS",
+    "ORIG_YEAR",
+]
